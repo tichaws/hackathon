@@ -1,23 +1,45 @@
+<header>
+        <div class="global-width relative">
+            <div class="left">
+                <div class="logo">
+                    <img src="../assets/images/logo-header.png">
+                </div>
+                <div class="phone">310-907-7129</div>
+            </div>
+            <div class="right">
+                <span class="icon-menu"></span>
+                <ol class="nav">
+                    <li>
+                        <a href="#" class="Login">Login</a>
+                    </li>
+                </ol>
+                <a href="#" class="Get-Started-btn button outline cta Get-Started">Get Started</a>
+            </div>
+        </div>
+    </header>
+    <div class="skyline Rectangle">
+        <div class="global-width">
+            <span class="row1" style="color: white; font-size: 25px">Register</span>
+        </div>
+    </div>
 <div class="login-page" [@routerTransition]>
     <div class="row justify-content-md-center">
         <div class="col-md-4">
-            <img class="user-avatar" src="assets/images/logo.png" width="150px" />
-            <h1>Access Denied</h1>
             <form role="form">
                 <div class="form-content">
                     <div class="form-group">
-                        <input type="text" class="form-control input-underline input-lg" id="" placeholder="Full Name">
+                        <input type="text" class="form-control input-underline input-lg"  placeholder="Full Name">
                     </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control input-underline input-lg" id="" placeholder="Email">
+                        <input type="text" class="form-control input-underline input-lg"  placeholder="Email">
                     </div>
 
                     <div class="form-group">
-                        <input type="password" class="form-control input-underline input-lg" id="" placeholder="Password">
+                        <input type="password" class="form-control input-underline input-lg"  placeholder="Password">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control input-underline input-lg" id="" placeholder="Repeat Password">
+                        <input type="password" class="form-control input-underline input-lg"  placeholder="Repeat Password">
                     </div>
                 </div>
                 <a class="btn rounded-btn" [routerLink]="['/dashboard']"> Register </a>&nbsp;
