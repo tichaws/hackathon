@@ -9,6 +9,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  color: #005bea; 
 }
 
 .row1, .row2 {
@@ -141,6 +142,20 @@ section {
   padding: 0 30px;
   margin: auto;
 }
+
+.global-box {
+    margin-left: 260px;
+    width: 945px;
+    height: 220px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(98, 140, 209, 0.08);
+    justify-content: center;
+    display: flex;
+    margin-top: -100px;
+    position: sticky;
+}
+
 .global-width.column-3 {
   padding: 0 15px;
 }
@@ -364,11 +379,12 @@ input, select {
   font-family: "source-sans-pro", arial, sans-serif;
   position: relative;
   z-index: 10;
-  color: white;
+  color: #007bff;;
   -webkit-appearance: none;
   transition: all 0.1s ease;
   border: 0;
   border-radius: 0;
+  border:1px solid #005bea;
 }
 input:hover, select:hover {
   background-color: #aab3be;
@@ -405,12 +421,12 @@ input.white:hover, select.white:hover {
   background-color: transparent;
 }
 input.white.outline, select.white.outline {
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #007bff;
+  border: 2px solid #007bff;
   background-color: transparent;
 }
 input.white.outline:hover, select.white.outline:hover {
-  border: 2px solid white;
+  border: 2px solid #007bff;
   background-color: transparent;
 }
 
@@ -428,6 +444,7 @@ input.body-color.large {
 }
 input.outline {
   background-color: transparent;
+  color: #007bff;
 }
 input.outline.small {
   padding: 7px 15px;
@@ -844,16 +861,23 @@ header .cta {
   width: 100%;
   padding: 30px;
   overflow: hidden;
-  background-color: rgba(67, 74, 84, 0.5);
+  background-color: white;
   text-align: left;
 }
+.splash .tab {
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    background-color: white;
+    text-align: left;
+}
+
 @media only screen and (max-width: 700px) {
   .splash .form {
     padding: 15px;
   }
 }
 .splash .form-headline {
-  color: white;
   font-size: 30px;
   font-weight: 300;
   line-height: 1.5;
@@ -1357,7 +1381,7 @@ ol.support li + li {
   .Rectangle-3 {
     margin-left: 260px;
     width: 945px;
-    height: 320px;
+    height: 160px;
     border-radius: 8px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(98, 140, 209, 0.08);
