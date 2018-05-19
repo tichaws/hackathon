@@ -145,14 +145,14 @@ section {
 
 .global-box {
     margin-left: 260px;
-    width: 945px;
-    height: 220px;
-    border-radius: 8px;
+    width: 66%;
+    border-radius: 0 0 8px 8px ;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(98, 140, 209, 0.08);
     justify-content: center;
+    margin-left: 18%;
     display: flex;
-    margin-top: -100px;
+    // margin-top: -100px;
     position: sticky;
 }
 
@@ -171,6 +171,14 @@ section {
 
 .col25 {
   width: 25%;
+}
+
+.col10 {
+    width: 10%;
+}
+
+.col40 {
+    width: 40%;
 }
 
 .col33 {
@@ -212,7 +220,25 @@ section {
   .col25:last-child {
     margin-bottom: 0;
   }
+  .col10 {
+    float: initial;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .col10 :last-child {
+    margin-bottom: 0;
+  }
+  .col40 {
+    float: initial;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .col40 :last-child {
+    margin-bottom: 0;
+  }
 }
+
+
 
 .col50a, .col50b {
   float: left;
@@ -343,6 +369,10 @@ section {
   width: 100% !important;
 }
 
+.width-70 {
+    width: 70% !important;
+}
+
 .clear {
   display: inline-block;
   width: 100%;
@@ -424,10 +454,12 @@ input.white.outline, select.white.outline {
   color: #007bff;
   border: 2px solid #007bff;
   background-color: transparent;
+  border-radius: 10px;
 }
 input.white.outline:hover, select.white.outline:hover {
   border: 2px solid #007bff;
   background-color: transparent;
+  border-radius: 10px;
 }
 
 input {
@@ -891,17 +923,17 @@ header .cta {
   }
 }
 .splash input::-webkit-input-placeholder {
-  color: white;
+  color: #005bea;
   opacity: 1;
   transition: all 0.1s ease;
 }
 .splash input::-moz-placeholder {
-  color: white;
+  color: #005bea;
   opacity: 1;
   transition: all 0.1s ease;
 }
 .splash input::-ms-input-placeholder {
-  color: white;
+  color: #005bea;
   opacity: 1;
   transition: all 0.1s ease;
 }
@@ -910,6 +942,18 @@ header .cta {
     margin-bottom: 15px;
   }
   .splash .col25:last-child {
+    margin-bottom: 0;
+  }
+  .splash .col10 {
+    margin-bottom: 15px;
+  }
+  .splash .col10:last-child {
+    margin-bottom: 0;
+  }
+  .splash .col40 {
+    margin-bottom: 15px;
+  }
+  .splash .col40:last-child {
     margin-bottom: 0;
   }
 }
@@ -1085,35 +1129,6 @@ header .cta {
   }
 }
 
-.skyline {
-  padding: 120px 15px;
-  background: #4b89dc url("https://www.realtymogul.com/sites/all/themes/realty_mogul/images/homepage2015/box-gamma.jpg") center top no-repeat;
-  background-size: cover;
-}
-@media only screen and (max-width: 700px) {
-  .skyline {
-    padding: 30px 0;
-  }
-}
-
-.skyline-headline {
-  font-size: 68px;
-  line-height: 1.5;
-  font-weight: 200;
-}
-.skyline-headline b {
-  font-weight: 700;
-}
-@media only screen and (max-width: 700px) {
-  .skyline-headline {
-    font-size: 50px;
-  }
-}
-@media only screen and (max-width: 380px) {
-  .skyline-headline {
-    font-size: 30px;
-  }
-}
 
 .featured-articles {
   background: #4b89dc url("https://www.realtymogul.com/sites/all/themes/realty_mogul/images/homepage2015/featured_articles__bg.jpg") center top no-repeat;
@@ -1240,7 +1255,7 @@ a.featured-article-link .body {
 section.product-plan {
   background-color: white;
 }
-section.product-plan .col25, section.product-plan .col50, section.product-plan .col100 {
+section.product-plan .col25, section.product-plan .col50, section.product-plan .col100 , section.product-plan .col10,section.product-plan .col40 {
   text-align: left;
 }
 section.product-plan h3 {
@@ -1339,59 +1354,3 @@ ol.support li + li {
     margin-left: 0;
   }
 }
-
-.rectangle-2 {
-    width: 1440px;
-    height: 458px;
-}
-
-.Login {
-    width: 40px;
-    height: 18px;
-    font-family: HelveticaNeue;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    color: #005bea;
-  }
-
-  .Get-Started-btn {
-    width: 107px;
-    height: 42px;
-    border-radius: 20px;
-    background-color: #ffb600;
-    box-shadow: 0 2px 4px 0 rgba(255, 182, 0, 0.5);
-  }
-
-  .Get-Started {
-    width: 83px;
-    height: 18px;
-    font-family: HelveticaNeue;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
-
-  .Rectangle-3 {
-    margin-left: 260px;
-    width: 945px;
-    height: 160px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(98, 140, 209, 0.08);
-    justify-content: center;
-    display: flex;
-    position: absolute;
-    margin-top: -100px;
-    position: sticky;
-  }
-
-  .no-padding {
-    padding: 0px
-  }
