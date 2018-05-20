@@ -1327,3 +1327,15 @@ a {
   height: 153px;
   background-color: #005bea;
 }
+
+.box-type {
+  width: 360px;
+  height: 155px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 16px 0 rgba(98, 140, 209, 0.24);
+}
+
+.tabbar {
+  padding: 10px 100px;
+}
