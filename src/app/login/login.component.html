@@ -19,7 +19,7 @@
     </header>
     <div class="skyline Rectangle">
         <div class="global-width">
-            <span class="row1" style="color: white; font-size: 25px">Register</span>
+            <span class="row1" style="color: white; font-size: 25px">Login</span>
         </div>
     </div>
 <div class="login-page" [@routerTransition]>
@@ -35,7 +35,7 @@
                         <input type="password" class="form-control input-underline input-lg" placeholder="Password">
                     </div>
                 </div>
-                <a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()"> Log in </a>
+                <a class="btn rounded-btn" [routerLink]="['/authen']" (click)="onLoggedin()"> Log in </a>
                 &nbsp;
                 <a class="btn rounded-btn" [routerLink]="['/signup']">Register</a>
             </form>
